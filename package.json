@@ -9,7 +9,6 @@
     "lint": "expo lint"
   },
   "dependencies": {
-    "@gluestack-ui/components": "^1.0.7",
     "@gluestack-ui/config": "^1.1.21",
     "@gluestack-ui/gluestack-ui-provider": "^1.0.7",
     "@gluestack-ui/themed": "^1.1.42",
