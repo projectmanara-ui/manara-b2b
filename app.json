@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Manara",
+    "slug": "manara-transport",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/manara-logo.jpg",
+    "scheme": "manara",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/manara-logo.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0c42"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Manara needs location access to show nearby pickup points and track your transport.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Manara needs location access to provide accurate pickup times and route tracking."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/manara-logo.jpg",
+        "backgroundColor": "#0a0c42"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "PLACEHOLDER_API_KEY_REPLACE_AFTER_GENERATION"
+        }
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/manara-logo.jpg"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      "expo-location",
+      "expo-location",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Manara to access your camera for profile photos."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
